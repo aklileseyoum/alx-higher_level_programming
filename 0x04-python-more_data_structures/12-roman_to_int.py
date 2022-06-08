@@ -2,6 +2,10 @@
 def roman_to_int(roman_string):
     if not roman_string:
         return 0
+    if not isinstance(roman_string, str):
+        return 0
+    if not roman_string.isupper():
+        return 0
     sum = 0
     for i in range(len(roman_string)):
         if roman_string[i] == 'I':
