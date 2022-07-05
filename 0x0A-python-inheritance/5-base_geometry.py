@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """
-Module 0-lookup
-empty class
+Moduele 5-base_geometry.py
+Empty BaseGeometry
+Class
 """
+
+
 class BaseGeometry:
-    """empty class"""
+    """ Base Geometry """
     pass
