@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module 9-rectangle
+Module 10-square
 inherits from rectangle
 Class
 """
