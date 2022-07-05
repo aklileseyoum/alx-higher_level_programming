@@ -1,10 +1,10 @@
 #!/usr/bin/python
-import json
 """
 Module 3-to_json_string
 change object to json
 method
 """
+import json
 
 
 def to_json_string(my_obj):
