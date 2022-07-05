@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 """
-Module 5-base_geometry
+Moduele 5-base_geometry.py
 Empty BaseGeometry
 Class
 """
 
 
 class BaseGeometry:
-    """Base Geometry"""
+    """ Base Geometry """
+
     def area(self):
-        """calculates area of the geometry"""
-        raise Exception ("area() is not implemented")
+        """ Calculates the area of the geometry """
+        raise Exception("area() is not implemented")
