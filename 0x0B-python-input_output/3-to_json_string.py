@@ -1,9 +1,5 @@
 #!/usr/bin/python
-"""
-Module 3-to_json_string
-change object to json
-method
-"""
+"""Defines a string-to-JSON function"""
 import json
 
 
