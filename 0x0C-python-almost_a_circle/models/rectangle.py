@@ -8,11 +8,12 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """method to initialize the variables"""
-        super(). __init__(id=None)
+        
         self.width = width
         self.height = height
         self.x = x
         self.y = y
+        super().__init__(id)
 
     #getter method for width
     def get_width(self):
