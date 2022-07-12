@@ -94,4 +94,11 @@ class TestBase_instantiation(unittest.TestCase):
         self.assertEqual(memoryview(b'abcefg'), Base(memoryview(b'abcefg')).id)
 
     def test_inf_id(self):
+        self.assertEqual(float('inf'), Base(float('inf')).id)
 
+    def test_NaN_id(self):
+        self.assertNotEqual(float('nan'), Base(float('nan')).id)
+
+    def test_two_args(self):
+        with self.assertRaises(TypeError):
+            Base(1, 2)
