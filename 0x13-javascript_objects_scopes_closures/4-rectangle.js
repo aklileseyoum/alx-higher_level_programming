@@ -1,31 +1,24 @@
 #!/usr/bin/node
-//JS script to draw a box
 class Rectangle {
-        constructor(w, h) {
-                if (w > 0 && h > 0) {
-                        this.width == w;
-                        this.height == h;
-                }
-        }
+  constructor (w, h) {
+    if (((w = parseInt(w)) > 0) && ((h = parseInt(h)) > 0)) {
+      this.width = w;
+      this.height = h;
+    }
+  }
 
-        print () {
-                for (let i = 0; i < height; i++) {
-                        for (let j = 0; j < width; j++) {
-                                console.log('X');
-                        }
-                        console.log('\n');
-                }
-        }
-
+  print () {
+    console.log(('X'.repeat(this.width) + '\n').repeat(this.height - 1) + 'X'.repeat(this.width));
+  }
 	rotate () {
-		let temp = width;
-		width = height:
-		height = temp;
+		let temp = this.width;
+		this.width = this.height;
+		this.height = temp;
 	}
 
 	double () {
-		width = width * 2;
-		height = height * 2;
+		this.width = this.width * 2;
+		this height = this.height * 2;
 	}
 }
 module.exports = Rectangle;
