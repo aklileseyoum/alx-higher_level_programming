@@ -10,16 +10,17 @@ class Rectangle {
   print () {
     console.log(('X'.repeat(this.width) + '\n').repeat(this.height - 1) + 'X'.repeat(this.width));
   }
-	rotate () {
-		const temp = this.width;
-		const temp2 = this.height;
-		this.width = temp2;
-		this.height = temp;
-	}
 
-	double () {
-		this.width = this.width * 2;
-		this height = this.height * 2;
-	}
+  rotate () {
+    const h = this.height;
+    const w = this.width;
+    this.width = h;
+    this.height = w;
+  }
+
+  double () {
+    this.height *= 2;
+    this.width *= 2;
+  }
 }
 module.exports = Rectangle;
