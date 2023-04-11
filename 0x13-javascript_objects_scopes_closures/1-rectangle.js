@@ -1,6 +1,5 @@
 #!/usr/bin/node
-//create a class with a constructor
-
+// JS script to define a class and initialize them
 class Rectangle {
 	constructor (w, h) {
 		this.width = w;
