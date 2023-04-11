@@ -1,5 +1,6 @@
 #!/usr/bin/node
 //define empty class called Rectangle
+
 class Rectangle {
 	
 }
